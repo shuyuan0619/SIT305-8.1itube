@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="left"
+        android:paddingLeft="30dp"
+        android:text="Video URL:"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_video_url"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:text="https://v.hoopchina.com.cn/bbs-editor-web/editor/2022-5/5f2adf5d223f7394ad6ebcf2ab5d061c_transcode.mp4?auth_key=1653667003-2-0-6c7bfe6fc27576df2d1c3aa5423f8171"
+        android:background="@drawable/edit_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_play_video"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:text="PLAY"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_video_url"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_video_url"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_video_url" />
+
+    <Button
+        android:id="@+id/btn_addToList"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="ADD TO PLAYLIST"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_video_url"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_video_url"
+        app:layout_constraintTop_toBottomOf="@+id/button_play_video" />
+
+    <Button
+        android:id="@+id/play_list_videos"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="MY PLAYLIST"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_video_url"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_video_url"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addToList" />
+</androidx.constraintlayout.widget.ConstraintLayout>
